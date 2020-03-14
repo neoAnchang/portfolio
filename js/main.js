@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("HTML/CSS").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 
   // Javascript Chart
   var doughnutData = [{
@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("Javascript").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("js").getContext("2d")).Doughnut(doughnutData);
 
   // WordPress Chart
   var doughnutData = [{
