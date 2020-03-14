@@ -398,3 +398,9 @@ sm {
     /* padding-top: 2%; */
     margin-bottom: 2%;
 }
+
+@media screen and (max-width:768px){
+.col-lg-offset-3 {
+    margin-left: 0;
+}
+}
