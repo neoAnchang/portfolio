@@ -1,7 +1,7 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function ($) {
 
   // Smooth scroll for the menu and links with .scrollto classes
-  $('.smothscroll').on('click', function(e) {
+  $('.smothscroll').on('click', function (e) {
     e.preventDefault();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -18,43 +18,31 @@ jQuery(document).ready(function( $ ) {
     interval: 3500
   });
 
-  // JavaScript Chart
+  // HTML/CSS Chart
   var doughnutData = [{
-      value: 70,
-      color: "#1abc9c"
-    },
-    {
-      value: 30,
-      color: "#ecf0f1"
-    }
-  ];
-  var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
-
-  // Bootstrap Chart
-  var doughnutData = [{
-    value: 90,
+    value: 95,
     color: "#1abc9c"
   },
   {
-    value: 10,
+    value: 5,
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("HTML/CSS").getContext("2d")).Doughnut(doughnutData);
+
+  // Javascript Chart
+  var doughnutData = [{
+    value: 50,
+    color: "#1abc9c"
+  },
+  {
+    value: 50,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("Javascript").getContext("2d")).Doughnut(doughnutData);
 
   // WordPress Chart
-  var doughnutData = [{
-    value: 65,
-    color: "#1abc9c"
-  },
-  {
-    value: 35,
-    color: "#ecf0f1"
-  }
-  ];
-  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
-
-  // HTML Chart
   var doughnutData = [{
     value: 80,
     color: "#1abc9c"
@@ -64,7 +52,19 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+
+  // director Chart
+  var doughnutData = [{
+    value: 100,
+    color: "#1abc9c"
+  },
+  {
+    value: 0,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("director").getContext("2d")).Doughnut(doughnutData);
 
   // Photoshop Chart
   var doughnutData = [{
@@ -80,6 +80,42 @@ jQuery(document).ready(function( $ ) {
 
   // Illustrator Chart
   var doughnutData = [{
+    value: 70,
+    color: "#1abc9c"
+  },
+  {
+    value: 30,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+
+  // pm Chart
+  var doughnutData = [{
+    value: 70,
+    color: "#1abc9c"
+  },
+  {
+    value: 30,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("pm").getContext("2d")).Doughnut(doughnutData);
+
+  // Write Chart
+  var doughnutData = [{
+    value: 60,
+    color: "#1abc9c"
+  },
+  {
+    value: 40,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("writer").getContext("2d")).Doughnut(doughnutData);
+
+  // bd Chart
+  var doughnutData = [{
     value: 50,
     color: "#1abc9c"
   },
@@ -88,5 +124,5 @@ jQuery(document).ready(function( $ ) {
     color: "#ecf0f1"
   }
   ];
-  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("bd").getContext("2d")).Doughnut(doughnutData);
 });
