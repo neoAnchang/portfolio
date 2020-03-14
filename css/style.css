@@ -176,6 +176,7 @@ SECTION WRAPS
 
 #headerwrap h1 {
   font-size: 80px;
+  font-size: 6rem;
   color: white;
   text-shadow: 1px 1px 1px #000;
 }
