@@ -1,9 +1,8 @@
-/**
-*  Template Name: Kelvin
-*  Template URL: https://templatemag.com/kelvin-bootstrap-resume-template/
-*  Author: TemplateMag.com
-*  License: https://templatemag.com/license/
-*/
+html {
+  width: 100% !important;
+}
+
+
 
 body {
   background-color: #f2f2f2;
@@ -13,6 +12,7 @@ body {
   color: #555;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+  width: 100% !important;
 }
 
 /* Titles */
